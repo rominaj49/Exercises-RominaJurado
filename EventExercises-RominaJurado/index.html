@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Exercise</title>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+
+  <p>1. Create an application that shows a gray square. It should have a “Change” button, which when clicked on, the fill color of the square should change to light blue.</p>
+  <div id="contentContainer" class="flex flex-col items-center mt-10 mb-10">
+          <div id="containerColor" class="bg-gray-500 w-48 h-48 "></div>
+          <button id="botonCambiar" class="mt-4 px-4 py-2 bg-yellow-400 text-black font-bold">CHANGE</button>
+        </div> 
+  <p>2. Create an application that shows a gray square. It must have a text input, and when writing in it, what is being written must appear printed inside the square.</p>
+   <div id="contentContainer" class="flex flex-col items-center mt-10 mb-10">
+    <div id="containerGray" class="bg-gray-500 w-48 h-48  text-white"></div>
+    <input type="text" id="botonEscribir" class="mt-4 p-2 border border-gray-400" placeholder="Escribe aquí...">
+    <button id="botonBorrar" class="mt-4 px-4 py-2 bg-yellow-400 text-black font-bold">RESET</button>
+  </div>
+
+  <p>3. Create an application that calculates the body mass index. When you press the “calculate” button, it should show the result in the corresponding input.</p>
+  <div id="contentContainer" class="flex flex-col items-center border p-4 rounded-md mt-10 mb-10">
+    <label for="alturaInput" class="mb-2 font-bold">Estatura:</label>
+    <p>en centimetros</p>
+    <input type="number" id="alturaInput" class="p-2 mb-4 border border-gray-400">
+
+    <label for="pesoInput" class="mt-4 mb-2 font-bold">Peso:</label>
+    <p>en kilogramos</p>
+    <input type="number" id="pesoInput" class="p-2 mb-4 border border-gray-400">
+
+    <button id="calcularBoton" class="mt-4 px-4 py-2 bg-yellow-400 text-black font-bold">Calculate</button>
+  </div>
+  <div id="containerHidden"  class="hidden">
+    <label for="resultadoInput" class="mb-2  font-bold">Resultado:</label>
+    <p>su indice de masa corporal es</p>
+    <input type="text" id="resultadoInput" class="p-2 mb-4 border border-gray-400 " readonly>
+  </div>
+
+  <p>4. Create a currency conversion application. Taking by default 1 dollar = 500 (Argentine, Chilean, Uruguayan peso, etc.).The user must be able to enter an amount in a local currency and it must be converted to its equivalent in dollars.</p>
+  <div id="contentContainer" class="border p-4 rounded-md flex flex-col items-center">
+    <label for="montoInput" class="mt-4 mb-2">Monto en moneda local:</label>
+    <input type="number" id="montoInput" class="p-2 my-2 border border-gray-400" placeholder="Ingrese monto" required>
+
+    <label for="resultadoOutput" class="my-2">Monto en Dólares:</label>
+    <input type="text" id="resultadoOutput" class="p-2 my-2 border border-gray-400" readonly>
+
+    <button id="convertirBoton" class="mt-4 px-4 py-2 bg-yellow-400 text-black font-bold">CONVERT</button>
+
+  </div>
+
+   <script src="exercise.js"></script>
+
+</body>
+</html>
